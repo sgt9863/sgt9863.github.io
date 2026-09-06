@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>sgt9863</title>
+<meta name="description" content="漢方・生薬の品質管理と、その土台になる統計・分析手法についての公開プロジェクト。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap">
+<style>
+/* stats サイト（style.css）と同じトークンを使い、見た目の一貫性を保つ */
+:root {
+  --bg: #f6f6f7;
+  --panel: #ffffff;
+  --ink: #101014;
+  --ink-2: #1c1c22;
+  --muted: #6b7080;
+  --muted-2: #8a8e9c;
+  --accent: #3b4557;
+  --line: #e5e6eb;
+  --line-strong: #d5d6dd;
+  --radius: 12px;
+  /* 白文字を載せる面の色。--ink はダークで明色に反転するので使わない。
+     ダークではページ背景(#0f1013)より明るくして「浮いた面」にする。
+     （stats サイトで同じ間違いを踏み、コントラスト比 1.21 になっていた） */
+  --ink-solid: #101014;
+  --font: "Inter", "Noto Sans JP", "Hiragino Sans", "Yu Gothic UI", system-ui, -apple-system, sans-serif;
+}
+:root[data-theme="dark"] {
+  --bg: #0f1013;
+  --panel: #17181d;
+  --ink: #e8e9ee;
+  --ink-2: #f3f3f6;
+  --muted: #9aa0b0;
+  --muted-2: #7d8394;
+  --accent: #7c87a1;
+  --line: #2a2c34;
+  --line-strong: #3a3d47;
+  --ink-solid: #202229;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1013; --panel: #17181d; --ink: #e8e9ee; --ink-2: #f3f3f6;
+    --muted: #9aa0b0; --muted-2: #7d8394; --accent: #7c87a1;
+    --line: #2a2c34; --line-strong: #3a3d47;
+    --ink-solid: #202229;
+  }
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.85;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 880px; margin: 0 auto; padding: 40px 22px 80px; }
+
+/* ヒーロー: stats サイトと同じ「墨ソリッド」 */
+.hero {
+  background: var(--ink-solid);
+  color: #f2f2f5;
+  border-radius: 14px;
+  padding: 38px 36px 32px;
+}
+.hero h1 {
+  margin: 0 0 10px;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 0.01em;
+  color: #fff;
+  line-height: 1.3;
+}
+.hero p { margin: 0; color: #c9cbd4; font-size: 15px; max-width: 42em; }
+.hero p strong { color: #fff; font-weight: 700; }
+
+h2 {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--muted-2);
+  margin: 42px 0 14px;
+}
+
+.cards { display: grid; gap: 16px; }
+@media (min-width: 720px) { .cards { grid-template-columns: 1fr 1fr; } }
+
+.card {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 22px 24px 20px;
+  overflow: hidden;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  background: var(--accent);
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  border-color: var(--line-strong);
+  box-shadow: 0 8px 24px rgba(16, 16, 20, 0.08);
+}
+.card:hover::before { opacity: 1; }
+.card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.card .icon { font-size: 26px; line-height: 1; }
+.card h3 { margin: 12px 0 6px; font-size: 17px; font-weight: 700; }
+.card p { margin: 0; color: var(--muted); font-size: 13.5px; line-height: 1.75; }
+.card .tags { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px; }
+.card .tag {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 2px 9px;
+}
+
+footer {
+  margin-top: 52px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  color: var(--muted-2);
+  font-size: 12.5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  align-items: center;
+}
+footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <h1>sgt9863</h1>
+    <p><strong>漢方・生薬の品質管理</strong>と、その土台になる<strong>統計・分析手法</strong>についての公開プロジェクトです。いずれも作りかけを含みますが、公開しながら育てています。</p>
+  </header>
+
+  <h2>プロジェクト</h2>
+  <div class="cards">
+
+    <a class="card" href="/stats/">
+      <div class="icon">📊</div>
+      <h3>統計学習ハブ</h3>
+      <p>高校数学から統計検定準1級・実験計画法・ケモメトリクスまでを、パラメータを動かせるグラフで学ぶ教材。88トピックすべてに操作課題と確認問題つき。</p>
+      <div class="tags"><span class="tag">統計検定準1級</span><span class="tag">実験計画法</span><span class="tag">PLS</span></div>
+    </a>
+
+    <a class="card" href="/paper-explainer/">
+      <div class="icon">📄</div>
+      <h3>KAMPO PAPER LAB</h3>
+      <p>漢方・生薬の品質管理に関する論文を、日本語の解説記事に変換して蓄積するサイト。指紋分析・Q-marker・QAMS などの話題を扱います。</p>
+      <div class="tags"><span class="tag">論文解説</span><span class="tag">生薬QC</span></div>
+    </a>
+
+    <a class="card" href="/lc-iso-dev/">
+      <div class="icon">🧪</div>
+      <h3>グラジエント分離モデル 理解ノート</h3>
+      <p>HPLC の分離条件を実験計画法で最適化するための知識ノート。保持のモデルとグラジエント条件の関係を整理しています。</p>
+      <div class="tags"><span class="tag">HPLC</span><span class="tag">条件最適化</span></div>
+    </a>
+
+  </div>
+
+  <footer>
+    <span>© sgt9863</span>
+    <a href="https://github.com/sgt9863">GitHub</a>
+  </footer>
+
+</div>
+</body>
+</html>
