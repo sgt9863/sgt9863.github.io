@@ -30,6 +30,7 @@ DNS がまだなら、`CNAME` を一時的に外して push すること（`git 
 | `sgt9863.com/stats/` | [stats](https://github.com/sgt9863/stats) — 統計学習ハブ |
 | `sgt9863.com/paper-explainer/` | [paper-explainer](https://github.com/sgt9863/paper-explainer) — KAMPO PAPER LAB |
 | `sgt9863.com/lc-iso-dev/` | [lc-iso-dev](https://github.com/sgt9863/lc-iso-dev) — グラジエント分離モデル 理解ノート |
+| `sgt9863.com/hokkaido-2026/` | このリポジトリの `hokkaido-2026/` — 北海道旅行のしおり |
 
 各プロジェクト側に `CNAME` ファイルは**置かない**（置くとそのリポジトリだけドメイン直下を占有してしまう）。
 
