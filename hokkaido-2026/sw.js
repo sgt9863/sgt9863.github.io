@@ -1,4 +1,4 @@
-const CACHE = 'hokkaido-2026-v3';
+const CACHE = 'hokkaido-2026-v4';
 const ASSETS = ['./','index.html','style.css','data.js','app.js','sw.js','manifest.webmanifest','icon.svg','itinerary.txt','images/P03.jpg','images/P04.jpg','images/P06.jpg','images/P12.jpg'];
 const assetURLs = ASSETS.map(path => new URL(path, self.registration.scope).href);
 self.addEventListener('install', event => {
