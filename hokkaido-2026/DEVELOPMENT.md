@@ -74,4 +74,5 @@
 - Where a reusable exact shop or hotel photograph was unavailable, used a representative food, produce, starry-sky or breakfast image and labelled it as an image rather than a facility-specific photograph.
 - Kept visible source links and complete author/licence metadata. Sources are Wikimedia Commons, Pexels and the Jozankei Tourist Association photo library.
 - Added custom crop positions for the mushroom, cake and winter-star images and bumped the offline cache to `hokkaido-2026-v12`.
-- Validation passed for 66 unique asset hashes, 59 mapped places, seven repeated moments, file existence, complete metadata, JavaScript syntax and fresh-origin browser loading. Publication status follows after the Pages deployment is verified.
+- Validation passed for 66 unique asset hashes, 59 mapped places, seven repeated moments, file existence, complete metadata, JavaScript syntax and fresh-origin browser loading.
+- Published commit `88f5e0de7f0a5bece33aedb47772d1065f66a89f`; GitHub Pages completed successfully. SHA-256 checks confirmed the public manifest, worker and all 17 replaced JPEGs match the validated local files. A clean Chrome session at 390 px loaded the new breakfast caption and Pexels source, found no broken images, no horizontal overflow and no browser errors.
