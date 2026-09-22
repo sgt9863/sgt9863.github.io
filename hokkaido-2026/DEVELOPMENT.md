@@ -58,3 +58,11 @@
 - The generated manifest contains 66 assets and 66 unique assignments; no place or repeated timeline moment shares an asset, and no image file is missing.
 - At 390 px, no horizontal overflow was found. Browser review confirmed the soup curry on SAMA, the corrected sushi crop on Triton, the lake-and-mountain view at Shikotsu, map markers and the hosted-map status.
 - Published commit `7bd148d8de2838bd7266f27bc4199427017fffd5` to `main`; GitHub Pages reported `built` for that exact commit with no error. Live files matched the validated local copies, and the public browser switched from the prior offline cache to `hokkaido-2026-v9`, then displayed `soup_curry.jpg` for SAMA and the new lake view for Shikotsu.
+
+## 2026-09-22: Improve ramen, jingisukan and Mori no Uta imagery
+
+- Replaced the ramen card with a close, warmly lit Sapporo miso ramen photo. At the user's request, the jingisukan stop uses a pastoral sheep photograph from Biei instead of a food photograph.
+- Replaced the misleading Mori no Uta image, which showed vehicle chargers, with an autumn view of the Jozankei valley from the Jozankei Tourist Association photo library. The caption says it is a Jozankei autumn-forest image rather than claiming the photograph depicts the hotel itself.
+- Replaced the Sanai Hill and Shujitsu Hill cards with two distinct views of golden Japanese larch in autumn. Both captions identify the photographs as larch-foliage images rather than claiming they show the named hills.
+- Kept visible source and licence links in the photo credits. The ramen, sheep and larch photos come from Wikimedia Commons; the Jozankei image comes from the official tourist association library, whose page permits download and reuse for Jozankei tourism and events.
+- Bumped the service-worker cache to `hokkaido-2026-v11` so existing phones receive the replacements.

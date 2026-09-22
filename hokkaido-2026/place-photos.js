@@ -122,11 +122,11 @@ window.TRIP_PLACE_PHOTOS = {
     },
     "biei_hills": {
       "src": "images/places/biei_hills.jpg",
-      "caption": "美瑛の丘の風景",
-      "source": "https://commons.wikimedia.org/wiki/File:Hills_like_patch_work_-_panoramio.jpg",
-      "author": "柴田拓",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      "caption": "カラマツ紅葉のイメージ",
+      "source": "https://commons.wikimedia.org/wiki/File:Japanese_larch_autumn_forest_(52506194263).jpg",
+      "author": "Raita Futo from Tokyo, Japan",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
     },
     "hokusei": {
       "src": "images/places/hokusei.jpg",
@@ -138,11 +138,11 @@ window.TRIP_PLACE_PHOTOS = {
     },
     "shujitsu": {
       "src": "images/places/shujitsu.jpg",
-      "caption": "就実の丘",
-      "source": "https://commons.wikimedia.org/wiki/File:Shujitsu_Hill,_Aasahikawa,_Hokkaido,_Japan_-_panoramio.jpg",
-      "author": "MNRNSD",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      "caption": "カラマツ紅葉の丘のイメージ",
+      "source": "https://commons.wikimedia.org/wiki/File:Kusatsu_Machi.jpg",
+      "author": "Cornellier",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
     },
     "blue_pond": {
       "src": "images/places/blue_pond.jpg",
@@ -298,11 +298,11 @@ window.TRIP_PLACE_PHOTOS = {
     },
     "ramen": {
       "src": "images/places/ramen.jpg",
-      "caption": "味噌ラーメンのイメージ",
-      "source": "https://commons.wikimedia.org/wiki/File:Miso_ramen_of_Aji-no-tokedai.jpg",
-      "author": "毒島みるく",
-      "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+      "caption": "札幌味噌ラーメンのイメージ",
+      "source": "https://commons.wikimedia.org/wiki/File:151010_Sapporo_ramen_at_Susukino_Sapporo_Hokkaido_Japan01s.jpg",
+      "author": "663highland",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5"
     },
     "airport_bus": {
       "src": "images/places/airport_bus.jpg",
@@ -314,11 +314,11 @@ window.TRIP_PLACE_PHOTOS = {
     },
     "jingisukan": {
       "src": "images/places/jingisukan.jpg",
-      "caption": "ジンギスカンのイメージ",
-      "source": "https://commons.wikimedia.org/wiki/File:Genghis_Khan_dish.jpg",
-      "author": "Douglas Perkins",
-      "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+      "caption": "北海道・美瑛の牧場で暮らす羊",
+      "source": "https://commons.wikimedia.org/wiki/File:Sheep_outside_Dairy_Farm_-_Biei_-_Hokkaido_-_Japan_(48023339128).jpg",
+      "author": "Adam Jones from Kelowna, BC, Canada",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
     },
     "sushi": {
       "src": "images/places/sushi.jpg",
@@ -523,11 +523,11 @@ window.TRIP_PLACE_PHOTOS = {
     },
     "jozankei_onsen": {
       "src": "images/places/jozankei_onsen.jpg",
-      "caption": "定山渓温泉の風景",
-      "source": "https://commons.wikimedia.org/wiki/File:Jozankei_Onsen,_Sapporo,_Hokkaido_Prefecture;_January_2018_(01).jpg",
-      "author": "MIKI Yoshihito. (#mikiyoshihito)",
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+      "caption": "定山渓・秋の森のイメージ",
+      "source": "https://jozankei.jp/photo/",
+      "author": "一般社団法人 定山渓観光協会",
+      "license": "定山渓観光協会フォトライブラリー",
+      "licenseUrl": "https://jozankei.jp/photo/"
     }
   },
   "places": {

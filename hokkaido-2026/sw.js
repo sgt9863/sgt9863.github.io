@@ -1,5 +1,5 @@
 importScripts('place-photo-cache.js');
-const CACHE = 'hokkaido-2026-v9';
+const CACHE = 'hokkaido-2026-v11';
 const PLACE_IMAGES = self.TRIP_PLACE_IMAGE_PATHS || [];
 const ASSETS = ['./','index.html','style.css','data.js','place-photos.js','place-photo-cache.js','app.js','locations.js','maps.js','vendor/leaflet/leaflet.js','vendor/leaflet/leaflet.css','sw.js','manifest.webmanifest','icon.svg','itinerary.txt','images/P03.jpg','images/P04.jpg','images/P06.jpg','images/P12.jpg',...PLACE_IMAGES];
 const assetURLs = ASSETS.map(path => new URL(path, self.registration.scope).href);
