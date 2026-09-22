@@ -57,3 +57,4 @@
 - JavaScript syntax checks passed for the app, map, generated photo manifest, generated cache list and service worker.
 - The generated manifest contains 66 assets and 66 unique assignments; no place or repeated timeline moment shares an asset, and no image file is missing.
 - At 390 px, no horizontal overflow was found. Browser review confirmed the soup curry on SAMA, the corrected sushi crop on Triton, the lake-and-mountain view at Shikotsu, map markers and the hosted-map status.
+- Published commit `7bd148d8de2838bd7266f27bc4199427017fffd5` to `main`; GitHub Pages reported `built` for that exact commit with no error. Live files matched the validated local copies, and the public browser switched from the prior offline cache to `hokkaido-2026-v9`, then displayed `soup_curry.jpg` for SAMA and the new lake view for Shikotsu.
