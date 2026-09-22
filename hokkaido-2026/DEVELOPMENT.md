@@ -66,3 +66,4 @@
 - Replaced the Sanai Hill and Shujitsu Hill cards with two distinct views of golden Japanese larch in autumn. Both captions identify the photographs as larch-foliage images rather than claiming they show the named hills.
 - Kept visible source and licence links in the photo credits. The ramen, sheep and larch photos come from Wikimedia Commons; the Jozankei image comes from the official tourist association library, whose page permits download and reuse for Jozankei tourism and events.
 - Bumped the service-worker cache to `hokkaido-2026-v11` so existing phones receive the replacements.
+- Published photo commit `a3222fe1d37a6f87ad2d7ac62f478b759467f6d9`; GitHub Pages reported `built` without error. SHA-256 comparisons confirmed the live manifest, worker and all five replaced images match the local validated copies. The public page then activated cache `v11` and exposed the new larch captions and credit links at 390 px with no horizontal overflow.
