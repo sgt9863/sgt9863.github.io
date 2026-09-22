@@ -1,6 +1,7 @@
-const CACHE = 'hokkaido-2026-v6';
-const PLACE_IMAGES = ['airport','aoba','asari','ashibetsu','biei_hills','blue_pond','chitose','furano','furano_cheese','furano_forest','futami','hokusei','iwamizawa','jozankei','jozankei_bridge','jozankei_shrine','kanayama','nakayama','nopporo','okanokura','orgel','otaru_bank','otaru_canal','otaru_station','sakaimachi','salmon','sankai','shikotsu','shirahige','shirogane','shujitsu','shukutsu','sunagawa','tanaka','wattsu','yamasen','yotei'].map(name=>`images/places/${name}.jpg`);
-const ASSETS = ['./','index.html','style.css','data.js','place-photos.js','app.js','locations.js','maps.js','vendor/leaflet/leaflet.js','vendor/leaflet/leaflet.css','sw.js','manifest.webmanifest','icon.svg','itinerary.txt','images/P03.jpg','images/P04.jpg','images/P06.jpg','images/P12.jpg',...PLACE_IMAGES];
+importScripts('place-photo-cache.js');
+const CACHE = 'hokkaido-2026-v9';
+const PLACE_IMAGES = self.TRIP_PLACE_IMAGE_PATHS || [];
+const ASSETS = ['./','index.html','style.css','data.js','place-photos.js','place-photo-cache.js','app.js','locations.js','maps.js','vendor/leaflet/leaflet.js','vendor/leaflet/leaflet.css','sw.js','manifest.webmanifest','icon.svg','itinerary.txt','images/P03.jpg','images/P04.jpg','images/P06.jpg','images/P12.jpg',...PLACE_IMAGES];
 const assetURLs = ASSETS.map(path => new URL(path, self.registration.scope).href);
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(assetURLs)).then(() => self.skipWaiting()));

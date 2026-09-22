@@ -33,3 +33,27 @@
 - Photograph selection metadata is stored in `place-photos.js`; the original Wikimedia Commons file page and license URL are retained for each asset.
 - Cultural Affairs Agency guidance was used to distinguish personal copying from uploading material to a publicly reachable server. No claim is made that a public website becomes exempt from copyright rules merely because its intended audience is two people.
 - Background map availability depends on the OpenStreetMap tile service and a network connection. Route lines are intentionally handed off to Google Maps so current roads and traffic are used.
+
+## 2026-09-22 — Photo diversification and local-file map fallback
+
+### Changes
+
+- Expanded the place-photo set from 37 to 66 reusable images. Every one of the 59 place queries and seven repeated timeline moments now resolves to a different asset.
+- Replaced the incorrect Triton/Nopporo image with a sushi image and set its crop so the plate remains visible on a 390 px screen.
+- Added a Sapporo soup-curry image to SAMA and labels it as an image, rather than presenting it as the restaurant's own dish.
+- Replaced both building-oriented Shikotsu candidates with lake-and-mountain views: Lake Shikotsu with Mount Fuppushi for the itinerary and Lake Shikotsu with Mount Tarumae for the optional stop.
+- Added distinct photos for ramen, jingisukan, airport/rental-car context, Otaru, Biei, Jozankei and repeated breakfast/departure cards.
+- Generated `place-photo-cache.js` from the manifest so every current photo is included in offline storage without manually maintaining a second filename list.
+- A page opened directly with `file://` no longer requests map tiles that the browser blocks. It keeps the local markers and shows a link to the hosted version for the background map. The hosted page continues to use OpenStreetMap tiles.
+- Bumped the service-worker cache to `hokkaido-2026-v9`.
+
+### Source review
+
+- In addition to Wikimedia Commons, reviewed Unsplash, Pexels, Flickr Creative Commons, HOKKAIDO LOVE's photo library, Otaru Tourism Association's photo library, Jozankei Tourism Association's photo library, Photo AC, Pakutaso and Japan Search.
+- Japanese tourism libraries are strongest for exact locations, but their terms vary: some require registration, use approval or submission of the finished work. Jozankei's library states that its tourism photos may be used freely; Otaru's association library allows qualifying non-commercial web use. The current batch retained assets whose source, author and reuse license could be recorded automatically.
+
+### Validation
+
+- JavaScript syntax checks passed for the app, map, generated photo manifest, generated cache list and service worker.
+- The generated manifest contains 66 assets and 66 unique assignments; no place or repeated timeline moment shares an asset, and no image file is missing.
+- At 390 px, no horizontal overflow was found. Browser review confirmed the soup curry on SAMA, the corrected sushi crop on Triton, the lake-and-mountain view at Shikotsu, map markers and the hosted-map status.
