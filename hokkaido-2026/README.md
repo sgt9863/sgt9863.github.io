@@ -3,11 +3,15 @@
 Static mobile-first, read-only travel guide, served at `/hokkaido-2026/` by the existing GitHub Pages site.
 
 - `data.js`: itinerary, optional detours, photography candidates and source/photograph credits.
+- `locations.js`: verified coordinates for scheduled and optional stops.
+- `maps.js`: per-day Leaflet map, mobile interaction controls and Google Maps handoff.
+- `place-photos.js`: destination-photo assignments, attribution and license metadata.
 - `app.js`: hash-based daily navigation and accessible UI.
 - `style.css`: responsive layout.
 - `sw.js`: offline cache limited to this subdirectory. **Bump `CACHE` whenever any public content or asset changes.**
 - `itinerary.txt`: downloadable plain-text copy; regenerate from `data.js` after content changes.
-- `images/`: approved photographs P03, P04, P06, P12. See the website's credits screen for attribution and file-specific licenses.
+- `images/`: approved hero photographs P03, P04, P06, P12 plus reusable destination photographs under `images/places/`. See the website's credits screen for attribution and file-specific licenses.
+- `vendor/leaflet/`: locally hosted Leaflet 1.9.4 library and license. OpenStreetMap raster tiles are requested only while the map is visible and are not cached for offline use.
 
 No build is required. Serve the parent repository over localhost and open `/hokkaido-2026/`. Service workers require localhost or HTTPS.
 
