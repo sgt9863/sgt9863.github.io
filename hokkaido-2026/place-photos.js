@@ -10,11 +10,11 @@ window.TRIP_PLACE_PHOTOS = {
     },
     "chitose": {
       "src": "images/places/chitose.jpg",
-      "caption": "千歳市街の風景",
-      "source": "https://commons.wikimedia.org/wiki/File:JR%E5%8D%83%E6%AD%B3%E9%A7%85_Chitose_Sta._-_panoramio.jpg",
-      "author": "iloverjoa",
-      "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+      "caption": "チーズケーキとコーヒーのイメージ",
+      "source": "https://www.pexels.com/photo/delicious-cheesecake-with-coffee-at-cafe-30925474/",
+      "author": "Electra Studio",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
     },
     "wattsu": {
       "src": "images/places/wattsu.jpg",
@@ -106,11 +106,11 @@ window.TRIP_PLACE_PHOTOS = {
     },
     "furano": {
       "src": "images/places/furano.jpg",
-      "caption": "富良野の風景",
-      "source": "https://commons.wikimedia.org/wiki/File:Furano_Town_-_panoramio.jpg",
-      "author": "pakku",
-      "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+      "caption": "フラノマルシェ",
+      "source": "https://commons.wikimedia.org/wiki/File:%E3%83%95%E3%83%A9%E3%83%8E%E3%83%9E%E3%83%AB%E3%82%B7%E3%82%A7%E5%A4%96%E8%A6%B3.jpg",
+      "author": "西本伸顕",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
     },
     "furano_forest": {
       "src": "images/places/furano_forest.jpg",
@@ -210,11 +210,11 @@ window.TRIP_PLACE_PHOTOS = {
     },
     "jozankei": {
       "src": "images/places/jozankei.jpg",
-      "caption": "定山渓温泉の風景",
-      "source": "https://commons.wikimedia.org/wiki/File:%E5%AE%9A%E5%B1%B1%E6%B8%93%E6%B8%A9%E6%B3%89_-_panoramio.jpg",
-      "author": "t-konno",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      "caption": "定山源泉公園",
+      "source": "https://jozankei.jp/photo/?category=135",
+      "author": "一般社団法人 定山渓観光協会",
+      "license": "定山渓観光協会フォトライブラリー",
+      "licenseUrl": "https://jozankei.jp/photo/"
     },
     "futami": {
       "src": "images/places/futami.jpg",
@@ -290,9 +290,9 @@ window.TRIP_PLACE_PHOTOS = {
     },
     "salmon": {
       "src": "images/places/salmon.jpg",
-      "caption": "道の駅 サーモンパーク千歳",
-      "source": "https://commons.wikimedia.org/wiki/File:Michinoeki_Salmon_Park_Chitose.jpg",
-      "author": "Him56",
+      "caption": "サケのふるさと千歳水族館",
+      "source": "https://commons.wikimedia.org/wiki/File:Chitose_Aquarium_20190703.jpg",
+      "author": "耕太郎 on Wikitravel",
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
     },
@@ -339,11 +339,12 @@ window.TRIP_PLACE_PHOTOS = {
     },
     "forest276": {
       "src": "images/places/forest276.jpg",
-      "caption": "大滝・国道276号沿いの風景",
-      "source": "https://commons.wikimedia.org/wiki/File:Michinoeki_Forest_276_Ohtaki.jpg",
-      "author": "Him56",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      "caption": "森のきのこのイメージ",
+      "source": "https://www.pexels.com/photo/mushrooms-in-a-forest-19437545/",
+      "author": "Kris Møklebust",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "position": "center 60%"
     },
     "sakaimachi_06": {
       "src": "images/places/sakaimachi_06.jpg",
@@ -371,19 +372,19 @@ window.TRIP_PLACE_PHOTOS = {
     },
     "niikuraya": {
       "src": "images/places/niikuraya.jpg",
-      "caption": "小樽・花園銀座商店街",
-      "source": "https://commons.wikimedia.org/wiki/File:Niikuraya_20150813.jpg",
-      "author": "Tobosha",
-      "license": "Public domain",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Niikuraya_20150813.jpg"
+      "caption": "和菓子と抹茶のイメージ",
+      "source": "https://www.pexels.com/photo/traditional-japanese-tea-ceremony-with-matcha-29518256/",
+      "author": "G N",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
     },
     "biei_town": {
       "src": "images/places/biei_town.jpg",
-      "caption": "美瑛町の風景",
-      "source": "https://commons.wikimedia.org/wiki/File:Town_Hall_of_Biei,_Hokkaido,_Japan.jpg",
-      "author": "Yasu (talk)",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      "caption": "日本の産直野菜のイメージ",
+      "source": "https://www.pexels.com/photo/a-display-of-vegetables-and-fruits-at-a-market-24029952/",
+      "author": "Markus Winkler",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
     },
     "biei_river": {
       "src": "images/places/biei_river.jpg",
@@ -403,11 +404,11 @@ window.TRIP_PLACE_PHOTOS = {
     },
     "hakkenzan": {
       "src": "images/places/hakkenzan.jpg",
-      "caption": "八剣山周辺の山景",
-      "source": "https://commons.wikimedia.org/wiki/File:%E7%A5%9E%E5%A8%81%E5%B2%B3.JPG",
-      "author": "Pakumin",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      "caption": "八剣山",
+      "source": "https://jozankei.jp/photo/?category=141",
+      "author": "一般社団法人 定山渓観光協会",
+      "license": "定山渓観光協会フォトライブラリー",
+      "licenseUrl": "https://jozankei.jp/photo/"
     },
     "jozankei_night": {
       "src": "images/places/jozankei_night.jpg",
@@ -427,27 +428,28 @@ window.TRIP_PLACE_PHOTOS = {
     },
     "jozankei_walk": {
       "src": "images/places/jozankei_walk.jpg",
-      "caption": "定山渓の散策路",
-      "source": "https://commons.wikimedia.org/wiki/File:%E5%AE%9A%E5%B1%B1%E6%B8%93%E6%95%A3%E7%AD%96%E8%B7%AF_(Jozankei_walkway)_-_panoramio.jpg",
-      "author": "t-konno",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      "caption": "岩戸観音堂",
+      "source": "https://jozankei.jp/photo/?category=170",
+      "author": "一般社団法人 定山渓観光協会",
+      "license": "定山渓観光協会フォトライブラリー",
+      "licenseUrl": "https://jozankei.jp/photo/"
     },
     "jozankei_walk2": {
       "src": "images/places/jozankei_walk2.jpg",
-      "caption": "定山渓の散策路",
-      "source": "https://commons.wikimedia.org/wiki/File:%E5%AE%9A%E5%B1%B1%E6%B8%93%E6%95%A3%E7%AD%96%E8%B7%AF_(Jozankei_walkway)_-_panoramio_(1).jpg",
-      "author": "t-konno",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      "caption": "定山渓の足湯",
+      "source": "https://jozankei.jp/photo/?category=136",
+      "author": "一般社団法人 定山渓観光協会",
+      "license": "定山渓観光協会フォトライブラリー",
+      "licenseUrl": "https://jozankei.jp/photo/"
     },
     "shikotsu_alt": {
       "src": "images/places/shikotsu_alt.jpg",
-      "caption": "支笏湖と樽前山",
-      "source": "https://commons.wikimedia.org/wiki/File:Lake_Shikotsu_Mt_Tarumae01n3200.jpg",
-      "author": "663highland",
-      "license": "CC BY 2.5",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.5"
+      "caption": "ケーキとコーヒーのイメージ",
+      "source": "https://www.pexels.com/photo/a-slice-of-cheesecake-beside-a-coffee-in-a-glass-cup-13261416/",
+      "author": "Kateryna Hnidash",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "position": "center 64%"
     },
     "salmon_aquarium": {
       "src": "images/places/salmon_aquarium.jpg",
@@ -459,27 +461,28 @@ window.TRIP_PLACE_PHOTOS = {
     },
     "biei_star": {
       "src": "images/places/biei_star.jpg",
-      "caption": "美瑛の丘の風景",
-      "source": "https://commons.wikimedia.org/wiki/File:The_Christmas-tree_called_in_Biei,_Hokkaidou_-_panoramio.jpg",
-      "author": "oyakata",
-      "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+      "caption": "冬の星空のイメージ",
+      "source": "https://www.pexels.com/photo/galaxy-in-the-sky-above-the-trees-in-the-snow-11412164/",
+      "author": "Nutzu Photografic",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "position": "center 42%"
     },
     "otaru_canal_night": {
       "src": "images/places/otaru_canal_night.jpg",
       "caption": "小樽運河の夜景",
-      "source": "https://commons.wikimedia.org/wiki/File:Otaru_Canal03bs3.jpg",
-      "author": "663highland",
-      "license": "CC BY 2.5",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.5"
+      "source": "https://commons.wikimedia.org/wiki/File:Otaru_Canal_HDR2.jpg",
+      "author": "Tan Wei Liang Byorn",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
     },
     "asari_breakfast": {
       "src": "images/places/asari_breakfast.jpg",
-      "caption": "朝里川温泉周辺の風景",
-      "source": "https://commons.wikimedia.org/wiki/File:%E6%9C%9D%E9%87%8C%E3%83%80%E3%83%A0_-_panoramio.jpg",
-      "author": "hasano_jp",
-      "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+      "caption": "パンの朝食イメージ",
+      "source": "https://www.pexels.com/photo/pastry-and-bread-on-table-7966096/",
+      "author": "Felicity Tai",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
     },
     "asari_departure": {
       "src": "images/places/asari_departure.jpg",
@@ -491,11 +494,11 @@ window.TRIP_PLACE_PHOTOS = {
     },
     "shirogane_breakfast": {
       "src": "images/places/shirogane_breakfast.jpg",
-      "caption": "白金温泉の宿の風景",
-      "source": "https://commons.wikimedia.org/wiki/File:Mori-no-ryotei-Biei_Shirogane_Onsen_Biei_Hokkaido_Japan01s3.jpg",
-      "author": "663highland",
-      "license": "CC BY 2.5",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.5"
+      "caption": "朝食のイメージ",
+      "source": "https://www.pexels.com/photo/food-on-a-table-2066741/",
+      "author": "Vinícius Estevão",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
     },
     "shirogane_departure": {
       "src": "images/places/shirogane_departure.jpg",
@@ -507,19 +510,19 @@ window.TRIP_PLACE_PHOTOS = {
     },
     "morinouta_breakfast": {
       "src": "images/places/morinouta_breakfast.jpg",
-      "caption": "定山渓を流れる豊平川",
-      "source": "https://commons.wikimedia.org/wiki/File:The_Toyohira_river_in_Jozankei%EF%BC%8F%E5%AE%9A%E5%B1%B1%E6%B8%93%E3%83%BB%E8%B1%8A%E5%B9%B3%E5%B7%9D_-_panoramio.jpg",
-      "author": "T DMY",
-      "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+      "caption": "ホテル朝食ビュッフェのイメージ",
+      "source": "https://www.pexels.com/photo/elegant-breakfast-buffet-setup-in-luxurious-restaurant-29000019/",
+      "author": "Quang Nguyen Vinh",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
     },
     "morinouta_departure": {
       "src": "images/places/morinouta_departure.jpg",
-      "caption": "定山渓周辺の道",
-      "source": "https://commons.wikimedia.org/wiki/File:%E5%AE%9A%E5%B1%B1%E6%B8%93%E3%83%AC%E3%82%A4%E3%82%AF%E3%83%A9%E3%82%A4%E3%83%B3_-_panoramio.jpg",
-      "author": "hasano_jp",
-      "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+      "caption": "定山渓の風景",
+      "source": "https://jozankei.jp/photo/?category=132",
+      "author": "一般社団法人 定山渓観光協会",
+      "license": "定山渓観光協会フォトライブラリー",
+      "licenseUrl": "https://jozankei.jp/photo/"
     },
     "jozankei_onsen": {
       "src": "images/places/jozankei_onsen.jpg",

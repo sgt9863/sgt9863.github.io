@@ -67,3 +67,11 @@
 - Kept visible source and licence links in the photo credits. The ramen, sheep and larch photos come from Wikimedia Commons; the Jozankei image comes from the official tourist association library, whose page permits download and reuse for Jozankei tourism and events.
 - Bumped the service-worker cache to `hokkaido-2026-v11` so existing phones receive the replacements.
 - Published photo commit `a3222fe1d37a6f87ad2d7ac62f478b759467f6d9`; GitHub Pages reported `built` without error. SHA-256 comparisons confirmed the live manifest, worker and all five replaced images match the local validated copies. The public page then activated cache `v11` and exposed the new larch captions and credit links at 390 px with no horizontal overflow.
+
+## 2026-09-22: Replace the 17 rejected photographs
+
+- Replaced all 17 items marked `差替` in the full 66-image audit. Exact-location photos now cover Furano Marche, Jozankei Gensen Park, Chitose Aquarium, Hakkenzan, Iwato Kannon, the Jozankei footbath and Otaru Canal at night.
+- Where a reusable exact shop or hotel photograph was unavailable, used a representative food, produce, starry-sky or breakfast image and labelled it as an image rather than a facility-specific photograph.
+- Kept visible source links and complete author/licence metadata. Sources are Wikimedia Commons, Pexels and the Jozankei Tourist Association photo library.
+- Added custom crop positions for the mushroom, cake and winter-star images and bumped the offline cache to `hokkaido-2026-v12`.
+- Validation passed for 66 unique asset hashes, 59 mapped places, seven repeated moments, file existence, complete metadata, JavaScript syntax and fresh-origin browser loading. Publication status follows after the Pages deployment is verified.
