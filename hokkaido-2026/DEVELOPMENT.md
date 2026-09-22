@@ -25,6 +25,7 @@
 - The automated check opened all 57 mapped places, verified details and Google Maps links, exercised map controls and filters, and found no page errors.
 - Offline validation passed with itinerary text, photo cards and mapped-place details available while OpenStreetMap tiles were unavailable.
 - Smartphone screenshots were reviewed for the day timeline, detour grid and 37-photo credits index.
+- The feature commit `6b94688` was pushed to `main`; GitHub Pages reported `built` with no error. The same browser suite then passed against `https://sgt9863.com/hokkaido-2026/`, including offline reload.
 
 ### Sources and limits
 
