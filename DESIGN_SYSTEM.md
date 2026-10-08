@@ -1,0 +1,42 @@
+# sgt9863.com の共通デザイン
+
+2026-10-09。ユーザーが選択した「教科書型」を基準に、各教材・ツールへ適用する。公式コンポーネントの導入や適合認証を意味せず、デジタル庁デザインシステムの考え方を各実装へ取り入れる。
+
+## 共通基準
+
+| 項目 | 採用した基準 |
+|---|---|
+| 色 | 白、本文 #1a1a1c、主要リンク #0031d8、補助面 #f3f6ff。グラフの系列・警告など意味のある色は維持 |
+| 文字 | 日本語ゴシック体、本文16px・行間1.8を基本。コード・数式・表の書体を維持 |
+| 余白 | 8px単位を基本に、本文・ナビゲーション・操作群を区切る |
+| リンク | 本文リンクは下線。サイト内ページからドメイントップへの導線を用意 |
+| ボタン・入力 | 主要な操作領域は高さ44px以上、枠やラベルでも用途を示す |
+| フォーカス | 黒と黄色 #ffd43d の2重表示。本文スキップリンクを用意 |
+| 見出し・配置 | 階層のある見出し、PCの目次と本文、スマートフォンの折り返し |
+| 既存機能 | 数式、グラフ、保存状態、検索、学習完了、ダウンロード、地図を維持 |
+| ダークモード | 既存のトップ・統計教材の明暗切替を維持。暗い背景には明るい青と文字色 |
+
+## 参照した公式資料
+
+確認日：2026-10-09。
+
+- [カラー](https://design.digital.go.jp/dads/foundations/color/)：文字と背景のコントラスト、意味別の色、黒黄フォーカス。
+- [タイポグラフィ](https://design.digital.go.jp/dads/foundations/typography/)：読みやすい日本語の本文と見出し。
+- [レイアウト](https://design.digital.go.jp/dads/foundations/layout/)：画面幅に応じた本文・ナビの配置。
+- [余白](https://design.digital.go.jp/dads/foundations/spacing/)：関連する情報を余白でまとめる。
+- [リンクテキスト](https://design.digital.go.jp/dads/foundations/link-text/)：行き先とリンクを判別しやすくする。
+- [ボタン](https://design.digital.go.jp/dads/components/button/)：操作の優先度、境界、フォーカスを区別する。
+
+## 正本とビルド
+
+| 対象 | 編集元 |
+|---|---|
+| トップ | このリポジトリの index.html / assets/design.css |
+| Python教材 | ../projects/python-data-learning/site/ → scripts/package.py・scripts/export_site.py |
+| 統計教材 | statsリポジトリ index.html / style.css |
+| 論文解説 | paper-explainerリポジトリ scripts/build_site.py / assets/dads.css → docs/ |
+| LC理解ノート・最適化 | lc-iso-devリポジトリのソースとビルド手順 |
+| LCグラジエント | lc-method-devソース → stliteビルド。公開版との差は開発記録に記載 |
+| 旅行のしおり | hokkaido-2026/ のHTML・CSS。更新時はsw.jsのCACHEも更新 |
+
+別リポジトリの公開やオフライン利用に影響しないよう、各サイトが自分のCSSを保持する。共通基準を変更するときは、この表の各編集元へ反映する。

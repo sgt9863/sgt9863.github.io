@@ -76,3 +76,7 @@
 - Added custom crop positions for the mushroom, cake and winter-star images and bumped the offline cache to `hokkaido-2026-v12`.
 - Validation passed for 66 unique asset hashes, 59 mapped places, seven repeated moments, file existence, complete metadata, JavaScript syntax and fresh-origin browser loading.
 - Published commit `88f5e0de7f0a5bece33aedb47772d1065f66a89f`; GitHub Pages completed successfully. SHA-256 checks confirmed the public manifest, worker and all 17 replaced JPEGs match the validated local files. A clean Chrome session at 390 px loaded the new breakfast caption and Pexels source, found no broken images, no horizontal overflow and no browser errors.
+
+## 2026-10-09 — Domain design alignment
+
+The user's domain-wide DADS design request supersedes the earlier olive/serif visual direction. Adopted blue/white foundations, Japanese sans headings, restrained corners, underlined links, 44px main controls and black/yellow focus. Added domain-home navigation; itinerary, map logic and all photos/credits are unchanged. Cache bumped from v12 to v13, manifest theme updated. Chrome at 1440/390px: day pages, explore, stars, guide and credits load without overflow or JS exceptions. Screenshots reviewed for home and itinerary. Native phone and screen reader not tested.

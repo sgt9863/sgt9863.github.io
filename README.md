@@ -52,3 +52,7 @@ python3 -m http.server 5184 --directory sgt9863.github.io
 ```
 
 （ワークスペースの `.claude/launch.json` に `home` として登録済み）
+
+## 共通デザイン（2026-10-09）
+
+現在のトップはデジタル庁デザインシステムを参考にした白・青の共通デザイン。上記の旧「たたき台」配色説明に代わり、[DESIGN_SYSTEM.md](DESIGN_SYSTEM.md) を現行の基準とする。各教材・ツールの編集元と参照した公式資料も同文書に記録する。
