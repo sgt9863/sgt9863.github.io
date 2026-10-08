@@ -80,3 +80,7 @@
 ## 2026-10-09 — Domain design alignment
 
 The user's domain-wide DADS design request supersedes the earlier olive/serif visual direction. Adopted blue/white foundations, Japanese sans headings, restrained corners, underlined links, 44px main controls and black/yellow focus. Added domain-home navigation; itinerary, map logic and all photos/credits are unchanged. Cache bumped from v12 to v13, manifest theme updated. Chrome at 1440/390px: day pages, explore, stars, guide and credits load without overflow or JS exceptions. Screenshots reviewed for home and itinerary. Native phone and screen reader not tested.
+
+### User scope correction
+
+The user excluded the travel guide from DADS unification. Restored index.html, style.css and manifest exactly from b65913a (the pre-unification state). Kept a new service-worker cache version v14 so browsers receive the restored original design. The previous DADS entry describes a superseded intermediate state.
