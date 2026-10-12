@@ -4,7 +4,8 @@ const lessons = C.chapters.flatMap(c => c.lessons.map(l => ({...l, chapter:c.tit
 const chapterIndexes={
   pandas:{chapter:'pandas',heading:'表を読む・整える・集計する',lead:'HPLCの測定表を使って、pandasの主要な機能を学びます。目的に合う操作を選び、処理前後の行数や値を確かめながら進めましょう。',intro:'まずPD-01〜PD-05で、CSVの読込から集計・保存までを体験します。その後、目次の順に操作の幅を広げます。',searchExamples:'欠損、結合、read_csv、PD-01',fallbackUnit:'01 表を扱う基本'},
   numpy:{chapter:'NumPy',heading:'配列を使って、数値を計算する',lead:'架空のHPLC測定データを使い、配列の作成、形と型、抽出、集計から乱数・線形代数・保存へ進みます。pandasで扱った測定値をNumPyで計算し、結果の読み方と確かめ方を学びます。',intro:'まずNP-01〜NP-03で、配列の基本、集計する方向（axis）、乱数生成を体験します。その後は目次の順に進み、配列の操作と数値計算を学びましょう。',searchExamples:'スライス、reshape、axis、NP-01',fallbackUnit:'01 配列と計算を体験する'},
-  matplotlib:{chapter:'Matplotlib',heading:'図の種類を選び、軸や配置を整える',lead:'架空のHPLC測定データを使い、図の作成から軸・凡例・配色の調整、保存までを学びます。FigureとAxesの役割を確かめながら、比べたいことが伝わる図を描きましょう。',intro:'まずMPL-01〜MPL-03で、棒グラフや散布図、複数の図の描画と保存を体験します。その後は目的に合う図の選び方、軸・凡例・注釈、配置と色の調整へ進みます。',searchExamples:'散布図、凡例、subplots、MPL-01',fallbackUnit:'01 最初の図を描く'}
+  matplotlib:{chapter:'Matplotlib',heading:'図の種類を選び、軸や配置を整える',lead:'架空のHPLC測定データを使い、図の作成から軸・凡例・配色の調整、保存までを学びます。FigureとAxesの役割を確かめながら、比べたいことが伝わる図を描きましょう。',intro:'まずMPL-01〜MPL-03で、棒グラフや散布図、複数の図の描画と保存を体験します。その後は目的に合う図の選び方、軸・凡例・注釈、配置と色の調整へ進みます。',searchExamples:'散布図、凡例、subplots、MPL-01',fallbackUnit:'01 最初の図を描く'},
+  seaborn:{chapter:'seaborn',heading:'DataFrameから、分布と関係を描く',lead:'架空のHPLC測定データを使い、seabornで分布や群の違い、変数の関係を描きます。DataFrameの列を軸・色・配置に対応させ、図から何を読み取れるか確かめながら進めましょう。',intro:'まずSNS-01〜SNS-03で、分布や群の比較、散布図と相関を体験します。その後、回帰や複数変数の比較、行列の可視化、スタイル設定、objectsによる作図へ進みます。',searchExamples:'分布、カテゴリ、histplot、SNS-01',fallbackUnit:'01 DataFrameから図を描く'}
 };
 Object.entries(chapterIndexes).forEach(([route,index])=>{index.route=route;index.lessons=lessons.filter(l=>l.chapter===index.chapter);});
 const chapterIndexFor=title=>Object.values(chapterIndexes).find(index=>index.chapter===title);
