@@ -93,7 +93,22 @@ function positionCurrentNav(){
   }
 }
 function render({focus=false}={}){codeIndex=0;state.page=decodeURIComponent(location.hash.slice(1)||'home');const l=lessons.find(x=>x.id===state.page);const index=Object.hasOwn(chapterIndexes,state.page)?chapterIndexes[state.page]:null;let html;if(l)html=lessonHTML(l);else if(state.page==='home')html=home();else if(index)html=chapterOverview(index);else if(state.page==='downloads'||state.page==='solutions')html=downloads(state.page==='solutions');else if(state.page==='start')html=start();else if(state.page==='python'||state.page==='data')html=C.pages[state.page];else html='<h1>ページが見つかりません</h1><p><a href="#home">学習の全体像へ戻る</a></p>';document.querySelector('#toc').innerHTML=navHTML();const main=document.querySelector('#main');main.innerHTML=html;setupAnimations(main);if(l)setupPageToc(main,l);setupChapterSearch(main,index);document.title=(l?`${l.id} ${l.title}`:index?`${index.chapter}の全体像・機能索引`:'分析の手習い')+' — Pythonデータ分析';document.querySelector('aside').classList.toggle('open',state.menu);document.querySelector('#menu').setAttribute('aria-expanded',String(state.menu));document.querySelector('#menu').textContent=state.menu?'学習目次を閉じる':'学習目次を開く';positionCurrentNav();if(focus){main.focus({preventScroll:true});window.scrollTo({top:0,left:0,behavior:'instant'});}main.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(document.getElementById(b.dataset.copy).textContent);announce('コードをコピーしました。');}catch(e){announce('コピーできませんでした。コードを選択し、Ctrl+C / Cmd+Cでコピーしてください。');}}));const checkbox=main.querySelector('#complete');if(checkbox)checkbox.addEventListener('change',()=>{if(checkbox.checked)state.done.add(l.id);else state.done.delete(l.id);try{localStorage.setItem(key,JSON.stringify([...state.done]));state.storage=true;}catch(e){state.storage=false;}render();document.querySelector('#complete').focus();announce(state.storage?'学習状況を保存しました。':'このブラウザでは保存できません。今回開いている間だけ記録します。');});}
-document.querySelector('#menu').addEventListener('click',()=>{state.menu=!state.menu;document.querySelector('aside').classList.toggle('open',state.menu);document.querySelector('#menu').setAttribute('aria-expanded',String(state.menu));document.querySelector('#menu').textContent=state.menu?'学習目次を閉じる':'学習目次を開く';});
+function setMenuOpen(open){
+  state.menu=open;
+  document.querySelector('aside').classList.toggle('open',open);
+  const button=document.querySelector('#menu');
+  button.setAttribute('aria-expanded',String(open));
+  button.textContent=open?'学習目次を閉じる':'学習目次を開く';
+  if(open)requestAnimationFrame(positionCurrentNav);
+}
+document.querySelector('#menu').addEventListener('click',()=>setMenuOpen(!state.menu));
+document.querySelector('#toc').addEventListener('click',event=>{
+  const anchor=event.target.closest('a[href^="#"]');
+  if(!anchor||!state.menu||anchor.getAttribute('href')!==`#${state.page}`)return;
+  setMenuOpen(false);
+  document.querySelector('#main').focus({preventScroll:true});
+  window.scrollTo({top:0,left:0,behavior:'instant'});
+});
 document.querySelector('.skip').addEventListener('click',event=>{event.preventDefault();document.querySelector('#main').focus();});
 matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',event=>{if(event.matches)document.querySelectorAll('details.animation-demo[open]').forEach(details=>{details.open=false;});});
 window.addEventListener('hashchange',()=>{state.menu=false;announce('');render({focus:true});});render();
